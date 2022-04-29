@@ -19,11 +19,8 @@
         background-color: #333333;
         border-top: 2px solid #ff3e00;  
         color: #e2e3db;  
-        margin: 0;
         position: fixed;
         bottom: 0;
-        left: 0;
-        right: 0;
         width: 100vw;
         font-size: 1.2rem;
         padding: 0.6rem 4rem;
@@ -43,8 +40,6 @@
                 border-width:0;
             }
         }
-
-        
     }  
 
     @media only screen and (max-width: 768px) {
@@ -63,7 +58,7 @@
 
                 img{
                     height: 25px;
-            }
+                }
             }
         }
 
