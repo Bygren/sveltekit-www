@@ -8,7 +8,7 @@
     <Nav />
 </header>
     
-<style>
+<style lang="scss">
     header{
         display: flex;
         background-color: #333;
@@ -18,58 +18,65 @@
         align-items: center;
         justify-content: space-between;
         z-index: 10;
+
+        h1 {
+            color: #e2e3db;
+            font-size: 2.6rem;
+        }
+
+        img{
+            margin-left: var(--margin-l);
+            padding: 2px 0;
+        }
+
+        span {
+            &.dark{
+                color: #888;
+            }
+            &.spacing{
+                letter-spacing: 0.6rem;
+            }
+        }
+
     }   
-
-    span.dark{
-        color: #888;
-    }
-    span.spacing{
-        letter-spacing: 0.6rem;
-    }
-
-    h1{
-        color: #e2e3db;
-        font-size: 2.6rem;
-    }
-
-    header img{
-        margin-left: var(--margin-l);
-        padding: 2px 0;
-    }
-
-        
-
 
     @media only screen and (max-width: 768px) {
         header {
             padding: 2px 0;
-        }
-        
-        h1{
-            font-size: 2.4rem;
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            img {
+                height: 40px;
+                margin-left: var(--margin-m);
+            }
+
+            span {
+                &.spacing{
+                    letter-spacing: 0.5rem;
+                }
+            }
         }
 
-        span.spacing{
-            letter-spacing: 0.5rem;
-        }
-
-        header img{
-            height: 40px;
-            margin-left: var(--margin-m);
-        }
     }
 
     @media only screen and (max-width: 420px) {
-        h1{
-            font-size: 2rem;
-        }
-        span.spacing{
-            letter-spacing: 0.3rem;
-        }
+        header{
+            h1 {
+                font-size: 2rem;
+            }
 
-        header img{
-            margin-left: var(--margin-s);
-        }
+            img {
+                margin-left: var(--margin-s);
+            }
 
+            span {
+                &.spacing{
+                    letter-spacing: 0.3rem;
+                }
+            }
+        }
     }
 </style>
