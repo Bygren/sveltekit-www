@@ -25,7 +25,7 @@
 </nav>
 <div class='blur' style="--nav-ul-display: {displayMenu}" on:click={showHide}></div>
 
-<style>
+<style lang="scss">
     div.blur{
         display: none;
         position: fixed;
@@ -45,77 +45,76 @@
         justify-content: end;
         margin-right: var(--margin-l);
         z-index: 10;
-    }
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-        display: flex;
-        z-index: 100;
-    }
+        button {
+            border: 0;
+            background: transparent;
+            display: none;
+            padding: 0;
+        }       
 
-    li {
-        background-color: #333;
-        color:#e2e3db;
-        
-    }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            z-index: 100;
 
-    li a {
-        display: block;
-        text-align: center;
-        padding: 0.8rem 1.6rem;
-        text-decoration: none;
-        font-weight: 600;
-        margin: 0;
-        color: inherit;
-    }
+            li {
+                background-color: #333;
+                color:#e2e3db;
 
-    li:hover:not(.active) {
-        background-color: #111;
-        color: #fff;
-    }
+                &:hover:not(.active) {
+                    background-color: #111;
+                    color: #fff;
+                }
+                
+                a {
+                    display: block;
+                    text-align: center;
+                    padding: 0.8rem 1.6rem;
+                    text-decoration: none;
+                    font-weight: 600;
+                    margin: 0;
+                    color: inherit;
 
-    .active {
-        background-color: #ff3e00;
-    }
+                    &.active {
+                        background-color: #ff3e00;
+                    }
+                }
+            }
 
-    button{
-        border: 0;
-        background: transparent;
-        display: none;
-        padding: 0;
-    }
+    
+        }
+    }    
 
     @media only screen and (max-width: 768px) {
         
         nav{
             --nav-ul-display: none;
             margin-right: var(--margin-m);
-        }
 
-        button{
-            display: inline;
-            cursor: pointer;
+            button {
+                display: inline;
+                cursor: pointer;
+            }
 
+            ul{
+                display: var(--nav-ul-display, none);
+                position: absolute;
+                top: 4rem;
+                width: 50%;
+
+                li {
+                    display: block;
+                }       
+            }
         }
 
         div.blur{
             display: var(--nav-ul-display, none);
-        }
-
-        ul{
-            display: var(--nav-ul-display, none);
-            position: absolute;
-            top: 4rem;
-            width: 50%;
-
-        }
-        
-        li {
-            display: block;
         }
     }
 
@@ -123,7 +122,6 @@
         nav{
             margin-right: var(--margin-s);
         }
-        
     }
 
 </style>
