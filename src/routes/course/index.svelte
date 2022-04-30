@@ -5,11 +5,9 @@
 <main>
     <h1>Lär dig SvelteKit</h1>
     <article>
-        <h2>om sidan</h2>
-        <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+        <h2>SvelteKit-kurs</h2>
+        <p><a href="https://docs.google.com/document/d/12fEBUlL6htgr6S-dGB-hNfkRM8jqnkbz9GmpCwy7c8c/edit?usp=sharing" target="_blank">
+            Utbildningsmaterialet i google docs</a></p>
     </article>
-    <article>
-        <h2>om sidan</h2>
-        <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-    </article>  
+ 
 </main>
