@@ -3,13 +3,11 @@
 </svelte:head>
 
 <main>
-    <h1>Om Sveltekit Tutorial</h1>
+    <h1>Om</h1>
     <article>
-        <h2>om sidan</h2>
-        <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+        <h2>Licenser</h2>
+        <p>Allt matrial till kursen och på webbplatsen får fritt spridas och ändras. Dock ej för kommersiellt bruk. 
+            Vinstdrivande skolor och företag tillåts m.a.o inte använda detta matrial.</p>
+        <p>Undantag gäller vissa bilder som används på sidan då dessa inte tillhör webbplatsen och har annan licensiering.</p>
     </article>
-    <article>
-        <h2>om sidan</h2>
-        <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-    </article>  
 </main>

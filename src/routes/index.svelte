@@ -10,8 +10,8 @@
     
     <article>
         <h2>Om denna sida</h2>
-        <p>Sidan används och utvecklas i sambamd med en utbildning i SvelteKit</p>
-        <p>Förhoppningsvis blir sidan så småning om en permanent utbildningssida.</p>
+        <p>Sidan används och utvecklas i samband med en utbildning i SvelteKit</p>
+        <p>Förhoppningsvis blir sidan så småningom en permanent utbildningssida.</p>
     </article>
 </main>
 
