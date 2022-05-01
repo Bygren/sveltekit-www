@@ -43,7 +43,7 @@
         color: #e2e3db;
         font-size: medium;
         justify-content: end;
-        margin-right: var(--margin-l);
+        margin-right: var(--margin-l);        font-size: medium;
         z-index: 10;
 
         button {
@@ -55,8 +55,6 @@
 
         ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
             overflow: hidden;
             background-color: #333;
             display: flex;
@@ -85,8 +83,6 @@
                     }
                 }
             }
-
-    
         }
     }    
 
