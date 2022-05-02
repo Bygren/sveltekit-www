@@ -3,7 +3,7 @@
     <section>
         <h2>Bilder</h2>
             <p>Bilderna får enbart användas för icke-kommersiellt personligt bruk.</p>
-            <a href="evolution-js.webp" download><img src="evolution-js.webp" alt="Evolution webp" height="75"><br>evolution-js.web</a> 
+            <a href="evolution-js.webp" download><img src="evolution-js.webp" alt="Evolution webp" height="75"><br>evolution-js.webp</a> 
             <a href="evolution-js.png" download><img src="evolution-js.png" alt="Evolution png" height="75"><br>evolution-js.png</a>
             <a href="evolution.png" download><img src="evolution.png" alt="Evolution raw png" height="75"><br>evolution.png</a>
             <a href="btn-menu.svg" download><img src="btn-menu.svg" alt="Button svg" height="75"><br>btn-menu.svg</a>

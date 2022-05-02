@@ -14,7 +14,6 @@
         background-color: #333;
         border-bottom: 1px solid #ff3e00;
         padding: 4px 0;
-        margin: 0;
         align-items: center;
         justify-content: space-between;
         z-index: 10;
@@ -37,7 +36,6 @@
                 letter-spacing: 0.6rem;
             }
         }
-
     }   
 
     @media only screen and (max-width: 768px) {

@@ -43,7 +43,7 @@
         color: #e2e3db;
         font-size: medium;
         justify-content: end;
-        margin-right: var(--margin-l);        font-size: medium;
+        margin-right: var(--margin-l);
         z-index: 10;
 
         button {
@@ -75,7 +75,6 @@
                     padding: 0.8rem 1.6rem;
                     text-decoration: none;
                     font-weight: 600;
-                    margin: 0;
                     color: inherit;
 
                     &.active {
