@@ -9,7 +9,6 @@
             <a href="btn-menu.svg" download><img src="btn-menu.svg" alt="Button svg" height="75"><br>btn-menu.svg</a>
             <a href="svelteEGY.svg" download><img src="svelteEGY.svg" alt="Logga svg" height="75"><br>svelteEGY.svg</a>
             <a href="favicon.png" download><img src="favicon.png" alt="Favicon png" height="75"><br>favicon.png</a>
-        
     </section> 
 </main>
 

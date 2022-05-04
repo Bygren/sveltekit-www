@@ -1,31 +1,41 @@
 <script>
+    import {page} from '$app/stores';
+    import {afterNavigate} from '$app/navigation';
+    
+    afterNavigate(() => {
+        const oldPage = document.querySelector('.active');
+        const activPage = document.querySelector('[href="' + $page.url.pathname + '"]');
+
+        if(oldPage != null && activPage != null)
+            oldPage.classList.remove('active');
+
+        if(activPage != null)
+            activPage.classList.add('active');
+    });
+    //document.getElementsByClassName('active')[0].classList.remove('active');
+    
     let displayMenu = 'none';
     let show = false;
 
-    function showHide(e){
-        show = !show;
-        displayMenu = show? 'block' : 'none';
-
-        if(e.target.tagName == 'A'){
-            document.getElementsByClassName('active')[0].classList.remove('active');
-            e.target.classList.add('active');
-        }
-    }
-
+    $: displayMenu = show ? 'block' : 'none';
 </script>
 
 <nav>
-    <button on:click={showHide} ><img src="btn-menu.svg" alt="menu btn" height="25"></button>
-    <ul on:click={showHide} style="--nav-ul-display: {displayMenu}">
-        <li><a class="active" href="/">Hem</a></li>
-        <li><a class="" href="/course">Kurs</a></li>
-        <li><a class="" href="/about">Om</a></li>
-    </ul>
+    <button on:click={() => show = !show} ><img src="btn-menu.svg" alt="menu btn" height="25"></button>
+    <ul on:click={() => show=false} style="--nav-ul-display: {displayMenu}">
+        <li><a href="/">Hem</a></li>
+        <li><a href="/course">Kurs</a></li>
+        <li><a href="/about">Om</a></li>
+    </ul>       
 
 </nav>
-<div class='blur' style="--nav-ul-display: {displayMenu}" on:click={showHide}></div>
+<div class='blur' style="--nav-ul-display: {displayMenu}" on:click={() => show=false}></div>
 
 <style lang="scss">
+    :global(li a.active) {
+        background-color: #ff3e00;
+    }
+
     div.blur{
         display: none;
         position: fixed;
@@ -76,10 +86,6 @@
                     text-decoration: none;
                     font-weight: 600;
                     color: inherit;
-
-                    &.active {
-                        background-color: #ff3e00;
-                    }
                 }
             }
         }
@@ -118,5 +124,4 @@
             margin-right: var(--margin-s);
         }
     }
-
 </style>
