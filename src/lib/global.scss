@@ -11,6 +11,10 @@ body, h1, h2, h3, p, section, article, ul,li {
     padding:0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
     font-family: "Overpass", Roboto, "Droid Sans", "Helvetica Neue", sans-serif;

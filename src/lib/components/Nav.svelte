@@ -33,6 +33,7 @@
 <style lang="scss">
     :global(li a.active) {
         background-color: #ff3e00;
+        border-bottom: 2px solid green;
     }
 
     div.blur{
@@ -72,19 +73,21 @@
             li {
                 background-color: #333;
                 color:#e2e3db;
-
-                &:hover:not(.active) {
-                    background-color: #111;
-                    color: #fff;
-                }
                 
                 a {
                     display: block;
                     text-align: center;
-                    padding: 0.8rem 1.6rem;
+                    padding: 0.8rem 1.6rem 0.4rem 1.6rem;
                     text-decoration: none;
                     font-weight: 600;
                     color: inherit;
+                    border-bottom: 2px solid transparent;
+
+                    &:hover:not(.active) {
+                        background-color: #111;
+                        color: #fff;
+                        border-bottom: 2px solid #ff3e00;
+                    }
                 }
             }
         }
