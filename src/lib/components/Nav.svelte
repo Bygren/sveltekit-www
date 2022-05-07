@@ -9,10 +9,9 @@
         if(oldPage != null && activPage != null)
             oldPage.classList.remove('active');
 
-        if(activPage != null)
+        if(activPage != null && !activPage.classList.contains('active'))
             activPage.classList.add('active');
     });
-    //document.getElementsByClassName('active')[0].classList.remove('active');
     
     let displayMenu = 'none';
     let show = false;
@@ -91,8 +90,7 @@
         }
     }    
 
-    @media only screen and (max-width: 768px) {
-        
+    @media only screen and (max-width: 768px) {    
         nav{
             --nav-ul-display: none;
             margin-right: var(--margin-m);
