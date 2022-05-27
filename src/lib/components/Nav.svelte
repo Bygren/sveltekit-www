@@ -20,7 +20,7 @@
 </script>
 
 <nav>
-    <button on:click={() => show = !show} ><img src="btn-menu.svg" alt="menu btn" height="25"></button>
+    <button on:click={() => show = !show} ><img src="/btn-menu.svg" alt="menu btn" height="25"></button>
     <ul on:click={() => show=false} style="--nav-ul-display: {displayMenu}">
         <li><a href="/">Hem</a></li>
         <li><a href="/course">Kurs</a></li>

@@ -3,7 +3,7 @@
 </script>
     
 <header>
-    <img src="svelteEGY.svg" alt="loggo" height="50">
+    <img src="/svelteEGY.svg" alt="loggo" height="50">
     <h1><span class="spacing"><span class="dark">SVELTE</span>KIT</span>.egyweb.se</h1>
     <Nav />
 </header>

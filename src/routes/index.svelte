@@ -4,8 +4,8 @@
 <main>
     <h1>SvelteKit Tutorial</h1>
     <picture>
-        <source type="image/webp" srcset="evolution-js.webp">  
-        <img src="evolution-js.png" alt="Evolution of frontend">
+        <source type="/image/webp" srcset="evolution-js.webp">  
+        <img src="/evolution-js.png" alt="Evolution of frontend">
     </picture>
     
     <article>
