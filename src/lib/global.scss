@@ -26,6 +26,7 @@ body {
 
 main {
     margin: 0 auto;
+    margin-bottom: 4rem;
     max-width: 120rem;
     padding: 1rem 3rem;
     font-size: 1.6rem;
@@ -51,11 +52,25 @@ main {
 
     p {
         padding-bottom: 0.7rem;
+        padding-top: 0.7rem;
+    }
+
+    ul {
+        margin-left: 2rem;
     }
 
     article {
         margin: 2rem 2rem;
         max-width: 80rem;
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        section {
+            margin-top: 1rem;
+        }
     }
 } 
 
