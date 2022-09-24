@@ -31,7 +31,7 @@
         li {
             min-height: 3rem;
             a {
-                padding: 0.7rem 0.4rem 0.4rem 0;   
+                padding: 0.7rem 0.4rem 0.4rem 0rem;   
             }
         }
     }
